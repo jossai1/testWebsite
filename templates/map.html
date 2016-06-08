@@ -12,27 +12,18 @@ a {
 }
 .logo{
 	text-align: center;
-
 }
-
 #gy {
   color: black;
   padding: 6px 8px;
   border-radius: 10px;
   font-weight: regular;
   border: 2px solid #00000;
-
   background: rgba(0,0,0,0);
   font-family: roboto;
   font-size: 10pt;
-
-
-
-
 }
-
 html, body { height: 100%; margin: 89; padding: 0; } #map { height: 80%; }
-
 </style>
 </head>
 
@@ -43,8 +34,9 @@ html, body { height: 100%; margin: 89; padding: 0; } #map { height: 80%; }
 </header>
 
 <body>
-<button id="gy"; color:"black"><a href="livefeed.html">Back to feed</button>
-	<div id="map"></div>
+<button id="gy"; color:"black"><a href="liveFeed">Back to feed</button>
+	
+	<div id="map"><a href="map"></a></div>
 <!-- Replace the value of the key parameter with your own API key. --> <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2HxwDCr43Ajx4wJ2fuh1k_tbRlj5I5Bs&callback=initMap"> </script>
 
 <script >
@@ -53,10 +45,8 @@ html, body { height: 100%; margin: 89; padding: 0; } #map { height: 80%; }
 	    zoom: 11,
 	    center: {lat: 6.5244, lng: 3.3792}
 	  });
-
 	  var trafficLayer = new google.maps.TrafficLayer();
 	  trafficLayer.setMap(map);}
-
 </script>
 </body>
 
